@@ -39,7 +39,7 @@ public class HttpServer {
      * 等待
      */
     public void await() {
-        System.out.println("==============http server is running==================");
+        System.out.println("============== HTTP服务器 运行中...... ==================");
 
         ServerSocket serverSocket = null;
         int port = 8080;
