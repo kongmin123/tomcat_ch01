@@ -42,12 +42,12 @@ public class HttpServer {
         System.out.println("============== HTTP服务器 运行中...... ==================");
 
         ServerSocket serverSocket = null;
-        int port = 8080;
-        int backlog = 1;
-        String host = "127.0.0.1";
+        int port = 8080; // 端口
+        int backlog = 1; // 请求传入连接队列的最大长度。
+        String host = "127.0.0.1"; // 服务器ip
         try {
             // 1 创建一个ServerSocket实例，然后进入一个while循环
-            serverSocket = new ServerSocket(port,1, InetAddress.getByName(host));
+            serverSocket = new ServerSocket(port,backlog, InetAddress.getByName(host));
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
