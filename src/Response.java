@@ -55,7 +55,7 @@ public class Response {
 
         try {
             File file = new File(HttpServer.WEB_ROOT, request.getUri());
-            System.out.println("======= 发送至浏览器[客户端] 的静态资源 :\n" + file.getPath());
+            System.out.println("======= 发送至浏览器[客户端] 的静态资源 :\n" + file.getPath() + "\n");
 
             // 文件存在
             if (file.exists()) {
